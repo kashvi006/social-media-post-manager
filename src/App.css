@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#eef2ff,#fdf2f8);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  max-width:1100px;
+  margin:auto;
+  padding:40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  text-align:center;
+  font-size:48px;
+  color:#4f46e5;
+  margin-bottom:35px;
+  font-weight:bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+  margin-bottom:30px;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+textarea,
+select{
+  width:100%;
+  padding:14px;
+  margin-top:10px;
+  margin-bottom:20px;
+  border:2px solid #ddd;
+  border-radius:12px;
+  font-size:16px;
+  outline:none;
+  transition:.3s;
+  box-sizing:border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus,
+textarea:focus,
+select:focus{
+  border-color:#6366f1;
+}
+
+button{
+  background:#6366f1;
+  color:white;
+  border:none;
+  padding:12px 24px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:bold;
+  transition:.3s;
+}
+
+button:hover{
+  background:#4338ca;
+  transform:translateY(-2px);
+}
+
+.post-card{
+  background:white;
+  border-radius:18px;
+  padding:20px;
+  margin-top:20px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.post-card:hover{
+  transform:translateY(-5px);
+}
+
+.platform{
+  display:inline-block;
+  background:#ede9fe;
+  color:#4f46e5;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+  margin-top:10px;
+}
+
+.actions{
+  margin-top:20px;
+}
+
+.actions button{
+  margin-right:10px;
+}
+
+.edit{
+  background:#10b981;
+}
+
+.edit:hover{
+  background:#059669;
+}
+
+.delete{
+  background:#ef4444;
+}
+
+.delete:hover{
+  background:#dc2626;
+}
+.header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.header h1{
+    font-size:48px;
+    color:#4338ca;
+    margin-bottom:8px;
+}
+
+.header p{
+    color:#666;
+    font-size:18px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:8px;
+    color:#444;
+}
+
+textarea{
+    min-height:120px;
+    resize:none;
+}
+
+h2{
+    color:#4338ca;
+}
+
+h3{
+    color:#222;
+    margin-bottom:10px;
+}
+
+.post-card p{
+    color:#555;
+    line-height:1.6;
 }

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import AddPost from "./components/AddPost";
+import PlatformFilter from "./components/PlatformFilter";
+import PostList from "./components/PostList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+
+      <header className="header">
+        <h1>🚀 Social Post Composer</h1>
+        <p>Create • Manage • Share</p>
       </header>
+
+      <AddPost />
+
+      <PlatformFilter />
+
+      <PostList />
+
     </div>
   );
 }
